@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | TuitionMate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+  <header class="navbar">
+    <a class="logo" href="index.html"><i class="fa-solid fa-graduation-cap"></i><span>TuitionMate</span></a>
+    <nav class="nav-links" aria-label="Main navigation"><a href="index.html">Home</a><a href="index.html#subjects">Courses</a><a href="index.html#features">About</a><a href="index.html#contact">Contact</a></nav>
+    <div class="auth-buttons"><a class="btn-outline" href="login.html" aria-current="page">Login</a><a class="btn-primary" href="#signup">Sign Up</a></div>
+    <details class="mobile-menu"><summary aria-label="Open navigation menu"><i class="fa-solid fa-bars"></i></summary><nav class="mobile-menu-panel"><a href="index.html">Home</a><a href="index.html#subjects">Courses</a><a href="index.html#features">About</a><a href="index.html#contact">Contact</a></nav></details>
+  </header>
+
+  <main class="login-main">
+    <div class="login-decoration decoration-circle"></div><div class="login-decoration decoration-square"></div>
+    <div class="login-container">
+      <section class="login-card" aria-labelledby="login-title">
+        <a class="card-logo" href="index.html"><i class="fa-solid fa-graduation-cap"></i><span>TuitionMate</span></a>
+        <h1 id="login-title">Welcome back!</h1>
+        <p class="card-subtitle">Login to continue your learning journey.</p>
+        <form action="#" method="get">
+          <div class="form-group"><label class="form-label" for="email">Email Address</label><div class="input-wrapper"><i class="fa-regular fa-envelope"></i><input id="email" name="email" type="email" class="form-input" placeholder="Enter your email" autocomplete="email" required></div></div>
+          <div class="form-group"><label class="form-label" for="password">Password</label><div class="input-wrapper"><i class="fa-solid fa-lock"></i><input id="password" name="password" type="password" class="form-input" placeholder="Enter your password" autocomplete="current-password" required></div></div>
+          <div class="forgot-row"><a class="forgot-password-link" href="mailto:hello@tuitionmate.example?subject=Password%20Reset%20Request">Forgot password?</a></div>
+          <button type="submit" class="btn-login-submit">Login <i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+        <div class="divider-or"><span>OR</span></div>
+        <a class="btn-google" href="mailto:hello@tuitionmate.example?subject=Google%20Login%20Help"><span class="google-g">G</span> Continue with Google</a>
+        <p id="signup" class="signup-prompt">Don't have an account? <a href="mailto:hello@tuitionmate.example?subject=TuitionMate%20Sign%20Up">Sign Up</a></p>
+        <p class="demo-note"><i class="fa-solid fa-shield-halved"></i> Student project demo — authentication is not connected.</p>
+      </section>
+    </div>
+    <div class="login-art" aria-hidden="true"><i class="fa-solid fa-book-open"></i><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-leaf"></i></div>
+  </main>
+  <footer class="login-footer"><a href="index.html">← Back to Home</a><span>Learn Today, Lead Tomorrow.</span><span>&copy; 2026 TuitionMate</span></footer>
+</body>
+</html>
